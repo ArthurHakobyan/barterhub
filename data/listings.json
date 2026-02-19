@@ -1,0 +1,80 @@
+[
+  {
+    "id": "1",
+    "type": "offer",
+    "title": "Professional Web Development",
+    "description": "I offer full-stack web development services using React, Next.js and Node.js. Looking to barter for graphic design or video editing skills.",
+    "category": "Technology",
+    "skills": ["React", "Next.js", "Node.js", "TypeScript"],
+    "authorName": "Alex Johnson",
+    "authorEmail": "alex@example.com",
+    "location": "New York, USA",
+    "createdAt": "2026-02-01T10:00:00.000Z",
+    "contactMethod": "Email"
+  },
+  {
+    "id": "2",
+    "type": "request",
+    "title": "Looking for a Logo Designer",
+    "description": "I need a professional logo for my startup. In exchange I can offer SEO consulting and content marketing strategy sessions.",
+    "category": "Design",
+    "skills": ["Logo Design", "Brand Identity", "Illustrator"],
+    "authorName": "Maria Chen",
+    "authorEmail": "maria@example.com",
+    "location": "San Francisco, USA",
+    "createdAt": "2026-02-05T14:30:00.000Z",
+    "contactMethod": "Email"
+  },
+  {
+    "id": "3",
+    "type": "offer",
+    "title": "Piano & Music Theory Lessons",
+    "description": "Certified music teacher with 10 years of experience offering piano lessons for all levels. Happy to barter for language tutoring or cooking classes.",
+    "category": "Music",
+    "skills": ["Piano", "Music Theory", "Composition", "Teaching"],
+    "authorName": "Sophie Martin",
+    "authorEmail": "sophie@example.com",
+    "location": "Paris, France",
+    "createdAt": "2026-02-08T09:15:00.000Z",
+    "contactMethod": "Phone"
+  },
+  {
+    "id": "4",
+    "type": "request",
+    "title": "Need a Personal Fitness Trainer",
+    "description": "Looking for a certified personal trainer for 3 months. I can offer web design services or photography in exchange.",
+    "category": "Fitness",
+    "skills": ["Personal Training", "Nutrition", "HIIT", "Strength Training"],
+    "authorName": "James Wright",
+    "authorEmail": "james@example.com",
+    "location": "London, UK",
+    "createdAt": "2026-02-10T16:45:00.000Z",
+    "contactMethod": "Email"
+  },
+  {
+    "id": "5",
+    "type": "offer",
+    "title": "Copywriting & Content Creation",
+    "description": "Experienced copywriter offering blog posts, website copy, and social media content. Looking to trade for accounting or legal advice.",
+    "category": "Writing",
+    "skills": ["Copywriting", "SEO Writing", "Content Strategy", "Editing"],
+    "authorName": "Emily Torres",
+    "authorEmail": "emily@example.com",
+    "location": "Austin, USA",
+    "createdAt": "2026-02-12T11:00:00.000Z",
+    "contactMethod": "Email"
+  },
+  {
+    "id": "6",
+    "type": "request",
+    "title": "Seeking Spanish Language Tutor",
+    "description": "I want to learn conversational Spanish for travel. Can offer cooking lessons (Italian cuisine) or photography sessions in return.",
+    "category": "Education",
+    "skills": ["Spanish", "Language Teaching", "Conversation Practice"],
+    "authorName": "David Kim",
+    "authorEmail": "david@example.com",
+    "location": "Toronto, Canada",
+    "createdAt": "2026-02-14T13:20:00.000Z",
+    "contactMethod": "Phone"
+  }
+]

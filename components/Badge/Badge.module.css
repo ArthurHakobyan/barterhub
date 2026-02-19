@@ -1,0 +1,35 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.offer {
+  background: var(--color-offer-light);
+  color: var(--color-offer-dark);
+}
+
+.request {
+  background: var(--color-request-light);
+  color: var(--color-request-dark);
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.offer .dot {
+  background: var(--color-offer);
+}
+
+.request .dot {
+  background: var(--color-request);
+}
