@@ -17,6 +17,7 @@
   gap: 24px;
 }
 
+/* ── Logo ─────────────────────────────────────── */
 .logo {
   display: flex;
   align-items: center;
@@ -49,6 +50,7 @@
   color: var(--color-primary);
 }
 
+/* ── Desktop nav links ────────────────────────── */
 .nav {
   display: flex;
   align-items: center;
@@ -74,12 +76,14 @@
   background: var(--color-primary-light);
 }
 
+/* ── Right group (desktop) ────────────────────── */
 .rightGroup {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
+/* ── CTA button (shared) ──────────────────────── */
 .ctaButton {
   display: inline-flex;
   align-items: center;
@@ -107,18 +111,137 @@
   height: 16px;
 }
 
-@media (max-width: 640px) {
-  .logoText {
+/* ── Hamburger button ─────────────────────────── */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  padding: 6px;
+  transition: background var(--transition);
+  flex-shrink: 0;
+}
+
+.hamburger:hover {
+  background: var(--color-surface-2);
+}
+
+.bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--color-text-primary);
+  border-radius: 2px;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+  transform-origin: center;
+}
+
+/* Animate to X when open */
+.barTop {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.barMid {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.barBot {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ── Mobile/tablet slide-down menu ───────────── */
+.mobileMenu {
+  display: none;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top: 1px solid var(--color-border);
+  padding: 0 16px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.mobileMenuOpen {
+  max-height: 400px;
+  padding: 16px;
+}
+
+.mobileLink {
+  padding: 14px 12px;
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  transition: all var(--transition);
+}
+
+.mobileLink:hover {
+  background: var(--color-surface-2);
+  color: var(--color-text-primary);
+}
+
+.mobileLink.active {
+  color: var(--color-primary);
+  background: var(--color-primary-light);
+}
+
+.mobileDivider {
+  height: 1px;
+  background: var(--color-border);
+  margin: 8px 0;
+}
+
+.mobileBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0 4px;
+  gap: 12px;
+}
+
+/* ── Backdrop ─────────────────────────────────── */
+.backdrop {
+  position: fixed;
+  inset: 0;
+  top: 68px;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+
+/* ── Responsive breakpoints ───────────────────── */
+
+/* Tablet and below: show hamburger, hide desktop nav */
+@media (max-width: 768px) {
+  .nav,
+  .rightGroup {
     display: none;
   }
 
-  .navLink {
-    padding: 8px 10px;
-    font-size: 0.82rem;
+  .hamburger {
+    display: flex;
   }
 
-  .ctaButton {
-    padding: 8px 14px;
-    font-size: 0.82rem;
+  .mobileMenu {
+    display: flex;
+  }
+}
+
+/* Small mobile adjustments */
+@media (max-width: 400px) {
+  .logoText {
+    display: none;
   }
 }
